@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="preload" as="image" href="../img/plato.png.png">
+  <title>Transmission</title>
+  <style>
+    body {
+      background: url('../img/transmision-fondo.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: scroll;
+      background-color: #363636 ;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .contenido {
+      background-color: rgba(31, 31, 31, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+      animation: aparecer 0.5s ease-in-out;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        background-image: none;
+        background-color: #2a2a2a;
+      }
+    }
+    @media (prefers-contrast: more) {
+      body {
+        color: #fff;
+        background-color: #000 !important;
+        background-image: none;
+      }
+      .contenido {
+        background-color: #222;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+   <h1>Transmission Repair</h1>
+<p>Keep your vehicle running smoothly with our professional transmission repair service.  
+   Whether automatic or manual, we ensure every component works as it should, restoring power and efficiency to your car.</p>
+<ul>
+  <li>Advanced diagnostics with state-of-the-art tools</li>
+  <li>Repair and replacement of damaged parts</li>
+  <li>Performance testing and final adjustments</li>
+</ul>
+<p>The transmission is the heart of your vehicle's movement — take care of it and it will take you far.</p>
+  </div>
+</body>
+</html>

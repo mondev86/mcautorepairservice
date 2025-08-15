@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección por idioma</title>
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('en')) {
+      window.location.href = 'en/index.html';
+    } else if (lang.startsWith('es')) {
+      window.location.href = 'es/index.html';
+    } else {
+      window.location.href = 'en/index.html'; // idioma por defecto
+    }
+  </script>
+</head>
+<body>
+  <p>Redirigiendo según el idioma del navegador...</p>
+</body>
+</html>

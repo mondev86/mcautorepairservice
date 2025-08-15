@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+   <link rel="preload" as="image" href="../img/remolque-fondo.png">
+  <title>Servicio de Remolque</title>
+  <style>
+    body {
+      background: url('../img/remolque-fondo.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: scroll;
+      background-color: #363636 ;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .contenido {
+      background-color: rgba(31, 31, 31, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    .contenido {
+  animation: aparecer 0.5s ease-in-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    @media screen and (max-width: 480px) {
+  body {
+    background-image: none;
+    background-color: #2a2a2a;
+  }
+}
+@media (prefers-contrast: more) {
+  body {
+    color: #fff;
+    background-color: #000 !important;
+    background-image: none;
+  }
+  .contenido {
+    background-color: #222;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Servicio de Remolque</h1>
+    <p>¿Tu coche se quedó parado? Te ofrecemos asistencia inmediata y profesional para remolcar tu vehículo donde lo necesites.</p>
+    <ul>
+      <li>Atención las 24 horas</li>
+      <li>Flota equipada con plataformas hidráulicas</li>
+      <li>Cobertura en zona urbana y carretera</li>
+    </ul>
+    <p>¡Confía en nosotros para llegar a donde otros no llegan!</p>
+  </div>
+</body>
+</html>

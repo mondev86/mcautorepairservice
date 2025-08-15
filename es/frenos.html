@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+   <link rel="preload" as="image" href="../img/frenos.png">
+  <title>Frenos</title>
+  <style>
+    body {
+      background: url('../img/frenos.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: scroll;
+      background-color: #363636 ;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .contenido {
+      background-color: rgba(31, 31, 31, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    .contenido {
+  animation: aparecer 0.5s ease-in-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    @media screen and (max-width: 480px) {
+  body {
+    background-image: none;
+    background-color: #2a2a2a;
+  }
+}
+@media (prefers-contrast: more) {
+  body {
+    color: #fff;
+    background-color: #000 !important;
+    background-image: none;
+  }
+  .contenido {
+    background-color: #222;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Frenos y Suspensión</h1>
+    <p>Tu seguridad es lo primero. Revisamos cada componente de los frenos y la suspensión para garantizar un viaje confiable.</p>
+    <ul>
+      <li>Pastillas, discos y amortiguadores</li>
+      <li>Chequeo completo del sistema hidráulico</li>
+      <li>Reparación y reemplazo con repuestos certificados</li>
+    </ul>
+    <p>No pongas en riesgo tu camino: frenos firmes, viaje seguro.</p>
+  </div>
+</body>
+</html>

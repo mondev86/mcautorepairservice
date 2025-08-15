@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Aplica solo si la URL es exactamente la raíz (sin carpeta)
+RewriteCond %{REQUEST_URI} ^/$
+
+# Detecta inglés
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ en/ [L,R=301]
+
+# Detecta español
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ es/ [L,R=301]
+
+# Por defecto: redirige a inglés si no se detecta idioma
+RewriteRule ^$ en/ [L,R=301]

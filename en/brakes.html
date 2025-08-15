@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="preload" as="image" href="../img/frenos.png">
+  <title>Brakes and Suspension</title>
+ <style>
+    body {
+      background: url('../img/frenos.png') no-repeat center center fixed;
+      background-size: cover;
+      background-attachment: scroll;
+      background-color: #363636 ;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .contenido {
+      background-color: rgba(31, 31, 31, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    .contenido {
+  animation: aparecer 0.5s ease-in-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    @media screen and (max-width: 480px) {
+  body {
+    background-image: none;
+    background-color: #2a2a2a;
+  }
+}
+@media (prefers-contrast: more) {
+  body {
+    color: #fff;
+    background-color: #000 !important;
+    background-image: none;
+  }
+  .contenido {
+    background-color: #222;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Brakes and Suspension</h1>
+    <p>Your safety comes first. We inspect every component of the brakes and suspension to ensure a reliable ride.</p>
+    <ul>
+      <li>Brake pads, discs, and shock absorbers</li>
+      <li>Full hydraulic system check</li>
+      <li>Repair and replacement with certified parts</li>
+    </ul>
+    <p>Don't risk your journey: firm brakes, safe travel.</p>
+  </div>
+</body>
+</html>
