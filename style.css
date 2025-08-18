@@ -167,7 +167,6 @@ h2::before {
 }
 
 p {
-  margin-left: 1rem;
   font-size: 1.125rem;
   line-height: 1.7;
   font-weight: 500;
@@ -812,5 +811,6 @@ footer a[href^="mailto:"]:hover {
             drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
   }
 }
+
 
 }
